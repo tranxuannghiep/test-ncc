@@ -1,0 +1,60 @@
+@import "../../media";
+#Content {
+  width: 100%;
+  flex: 1;
+  @include sm {
+    padding: 60px;
+  }
+  @include xs {
+    padding: 10px;
+  }
+  text-align: center;
+  .img {
+    width: 100%;
+    img {
+      margin: 0 auto;
+      display: block;
+      width: 200px;
+    }
+  }
+  .title {
+    @include xl {
+      margin: 20px;
+    }
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ccc;
+    h4 {
+      padding: 20px 0;
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .file-wrap {
+    @include xl {
+      display: flex;
+    }
+    .file {
+      text-align: left;
+      flex: 1;
+      @include xl {
+        width: 33%;
+        margin: 20px;
+      }
+      margin: 20px 0;
+
+      .body-img-title {
+        display: flex;
+
+        img {
+          height: auto;
+        }
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+}

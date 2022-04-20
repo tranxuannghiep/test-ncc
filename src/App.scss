@@ -1,3 +1,4 @@
+@import "./media";
 .App {
   text-align: center;
 }
@@ -35,4 +36,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+}
+
+ul,
+li,
+ol {
+  margin: 0;
+  list-style: none;
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+main {
+  display: flex;
 }

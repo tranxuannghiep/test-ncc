@@ -1,0 +1,45 @@
+@import "../../media";
+#SideBar {
+  ul {
+    width: 280px;
+    height: 100vh;
+    color: #fff;
+    background-color: #000;
+    display: none;
+    @include xxl {
+      display: block;
+    }
+    padding: 20px;
+    li {
+      padding: 10px;
+
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+      span {
+        opacity: 0.8;
+      }
+      &:hover {
+        span {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.icons {
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+  @include xxl {
+    display: none;
+  }
+  position: fixed;
+  @include sm {
+    top: 20px;
+    left: 20px;
+  }
+  @include xs {
+    top: 0px;
+    left: 0px;
+  }
+}
