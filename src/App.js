@@ -1,5 +1,6 @@
 import "./App.scss";
 import Content from "./components/Content/Content";
+import Footer from "./components/Footer/Footer";
 import SideBar from "./components/sidebar/SideBar";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
       <div className="container">
         <main>
           <SideBar />
-          <Content />
+          <div>
+            <Content />
+            <Footer />
+          </div>
         </main>
       </div>
     </div>
